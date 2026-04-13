@@ -106,12 +106,34 @@ To fully implement the MCP features:
 1. Complete the TODOs in `mcp_server.py`
 2. Implement the missing functionality in `mcp_client.py`
 
+### Testing the MCP Client
+
+`mcp_client.py` includes a simple test harness at the bottom. You can run it directly to verify everything works:
+
+```bash
+uv run mcp_client.py
+```
+
 ### MCP Inspector
 
 Use [MCP Inspector](https://github.com/modelcontextprotocol/inspector) to interactively explore and test the MCP server:
 
 ```bash
 mcp dev mcp_server.py
+```
+
+### Testing the Complete Flow
+
+Once the client functions are implemented, you can test the complete flow by running the main application:
+
+```bash
+uv run main.py
+```
+
+Try asking:
+
+```
+> What is the contents of the report.pdf document?
 ```
 
 ### Linting and Typing Check
